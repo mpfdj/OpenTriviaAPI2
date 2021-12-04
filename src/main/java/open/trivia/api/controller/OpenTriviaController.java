@@ -22,10 +22,7 @@ public class OpenTriviaController {
 
     @GetMapping("/quiz")
     public List<OpenTriviaItem> getQuiz(@RequestParam String category) {
-
-
-       // openTriviaService.getQuiz(category);
-        return null;
+        return openTriviaService.getQuiz(category);
     }
 
 }
